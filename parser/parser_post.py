@@ -32,6 +32,14 @@ def parse_data(link):
 
 
 def parse(link, parser_img=False, parser_text=True, parser_links=False):
+    """Creates a post data folder
+
+    Params
+        link(str): link to the group where the data comes from
+        parser_img(bool): a value that determines whether images should be parsed
+        parser_text(bool): a value that determines whether text should be parsed
+        parser_link(bool): a value that determines whether links should be parsed
+    """
     id_public = parse_data(link)
     name_public = link.split('/')[-1]
     # Созданение папки для отдельной группы
@@ -74,4 +82,3 @@ def parse(link, parser_img=False, parser_text=True, parser_links=False):
         except AttributeError:
             print('Wrong data! Try again.')
 
-            
