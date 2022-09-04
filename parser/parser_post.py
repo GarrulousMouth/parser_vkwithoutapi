@@ -73,3 +73,5 @@ def parse(link, parser_img=False, parser_text=True, parser_links=False):
                             file.write(f'https://vk.com/{name_public}?w={tag_id}\n')
         except AttributeError:
             print('Wrong data! Try again.')
+
+            
