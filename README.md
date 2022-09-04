@@ -1,1 +1,1 @@
-# parser_vkwithoutapi
+# Парсер постов из ВК без API
